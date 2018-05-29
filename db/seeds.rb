@@ -33,3 +33,10 @@ end
     picture: Faker::Fallout.quote,
     })
 end
+5.times do
+MainStory.create({
+  title: Faker::Fallout.character,
+  body: Faker::Fallout.faction,
+  picture: Faker::Fallout.quote,
+  })
+end

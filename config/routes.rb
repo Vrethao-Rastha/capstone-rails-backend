@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :headlines
       resources :dc_rnews
       resources :blogs
+      resources :main_story
     end
   end
 end
