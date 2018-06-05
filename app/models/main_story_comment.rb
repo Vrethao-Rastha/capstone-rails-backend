@@ -1,0 +1,2 @@
+class MainStoryComment < ApplicationRecord
+end

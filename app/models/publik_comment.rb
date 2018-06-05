@@ -1,0 +1,2 @@
+class PublikComment < ApplicationRecord
+end

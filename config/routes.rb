@@ -4,10 +4,18 @@ Rails.application.routes.draw do
     namespace 'v1' do
       resources :piper_news
       resources :publik_news
-      resources :headlines
       resources :dc_rnews
       resources :blogs
       resources :main_story
+
+      resources :piper_comments
+      resources :publik_comments
+      resources :dcr_comments
+      resources :main_story_comments
+
+      resources :users
+
+      resources :scroller
     end
   end
 end

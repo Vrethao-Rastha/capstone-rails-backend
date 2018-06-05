@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_29_234310) do
+ActiveRecord::Schema.define(version: 2018_06_04_142434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,10 +31,10 @@ ActiveRecord::Schema.define(version: 2018_05_29_234310) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "headlines", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.string "picture"
+  create_table "dcr_comments", force: :cascade do |t|
+    t.string "name"
+    t.text "comment"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -47,6 +47,22 @@ ActiveRecord::Schema.define(version: 2018_05_29_234310) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "main_story_comments", force: :cascade do |t|
+    t.string "name"
+    t.text "comment"
+    t.string "avatar"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "piper_comments", force: :cascade do |t|
+    t.string "name"
+    t.text "comment"
+    t.string "avatar"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "piper_news", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -55,10 +71,34 @@ ActiveRecord::Schema.define(version: 2018_05_29_234310) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "publik_comments", force: :cascade do |t|
+    t.string "name"
+    t.text "comment"
+    t.string "avatar"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "publik_news", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.string "picture"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "scrollers", force: :cascade do |t|
+    t.string "pic"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password"
+    t.string "avatar"
+    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

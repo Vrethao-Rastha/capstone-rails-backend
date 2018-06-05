@@ -1,0 +1,2 @@
+class DcrComment < ApplicationRecord
+end
