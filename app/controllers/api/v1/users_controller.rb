@@ -1,47 +1,48 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      def index
-        users = User.order('created_at DESC');
-        render json: {status: 'SUCCESS', message:'Loaded users', data:users}, status: :ok;
-      end
+      # POST /register
+  def register
+    @user = User.create(user_params)
+   if @user.save
+    response = { message: 'User created successfully'}
+    render json: response, status: :created
+   else
+    render json: @user.errors, status: :bad
+   end
+  end
 
-      def show
-        users_single = User.find(params[:id]);
-        render json: {status: 'SUCCESS', message:'Loaded users_single', data:users_single}, status: :ok;
-      end
+  def login
+    authenticate params[:email], params[:password]
+  end
+  def test
+    render json: {
+          message: 'You have passed authentication and authorization test'
+        }
+  end
 
-      def create
-        users = User.new(users_params)
+  private
 
-        if users.save
-          render json: {status: 'SUCCESS', message:'Created users single', data:users}, status: :ok;
-        else
-          render json: {status: 'ERROR', message:'Error creating users single', data:users.errors}, status: :unprocessable_entity;
-        end
-      end
+  def authenticate(email, password)
+    command = AuthenticateUser.call(email, password)
 
-      def destroy
-        users = User.find(params[:id]);
-        users.destroy
-        render json: {status: 'SUCCESS', message:'Deleted users single', data:users}, status: :ok;
-      end
+    if command.success?
+      render json: {
+        access_token: command.result,
+        message: 'Login Successful'
+      }
+    else
+      render json: { error: command.errors }, status: :unauthorized
+    end
+   end
 
-      def update
-        users = User.find(params[:id])
-        if users.update_attributes(users_params)
-          render json: {status: 'SUCCESS', message:'Edited users single', data:users}, status: :ok;
-        else
-          render json: {status: 'ERROR', message:'Error editing users single', data:users.errors}, status: :unprocessable_entity;
-        end
-      end
-
-
-      private
-
-      def users_params
-        params.permit(:title, :body, :picture)
-      end
+  def user_params
+    params.permit(
+      :name,
+      :email,
+      :password
+    )
+  end
     end
   end
 end

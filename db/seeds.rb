@@ -61,24 +61,7 @@ MainStoryComment.create({
   avatar: 'test'
   })
 end
-1.times do
-  User.create({
-    name: 'Valkryie',
-    email: 'V@lkryie.com',
-    password: 'asdf',
-    avatar: 'test',
-    admin: true
-  })
-end
-  1.times do
-    User.create({
-    name: 'Preston',
-    email: 'G@rvey.com',
-    password: 'asdf',
-    avatar: 'test',
-    admin: false
-    })
-end
+
 
 1.times do
   Scroller.create({pic: "../images/Fallout-4-Concept-Art-1.jpg"}) end
