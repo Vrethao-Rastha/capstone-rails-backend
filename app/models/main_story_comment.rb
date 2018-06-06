@@ -1,2 +1,3 @@
 class MainStoryComment < ApplicationRecord
+  
 end
