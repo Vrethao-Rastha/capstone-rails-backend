@@ -37,32 +37,62 @@ end
   DcrComment.create({
     name: 'test',
     comment: 'test',
-    avatar: 'test'
+    avatar: 'test',
+    storyId: '2'
     })
 end
 1.times do
   PublikComment.create({
     name: 'test',
     comment: 'test',
-    avatar: 'test'
+    avatar: 'test',
+    storyId: '2'
     })
 end
 1.times do
   PiperComment.create({
     name: 'test',
     comment: 'test',
-    avatar: 'test'
+    avatar: 'test',
+    storyId: '2'
     })
 end
 1.times do
 MainStoryComment.create({
   name: 'test',
   comment: 'test',
-  avatar: 'test'
+  avatar: 'test',
+  storyId: '2'
   })
 end
-
-
+User.create({
+  name: 'Valkryie',
+  email: 'V@lkryie.Vault111',
+  avatar: '',
+  password: 'asdf',
+  admin: 'true'
+})
+User.create({
+    name: 'Ronnie',
+    email: 'Sh@w.theCastle',
+    avatar: 'https://i.ytimg.com/vi/feZTsPo106o/maxresdefault.jpg',
+    password: 'asdf',
+    admin: 'false'
+  })
+User.create({
+      name: 'Preston',
+      email: 'G@rvey.theCastle',
+      avatar: '',
+      password: 'asdf',
+      admin: 'false'
+    })
+User.create({
+        name: 'Heather',
+        email: 'C@ssadin.Vault111',
+        avatar: '',
+        password: 'asdf',
+        admin: 'false'
+        })
 1.times do
   Scroller.create({pic: "../images/Fallout-4-Concept-Art-1.jpg"}) end
 1.times do

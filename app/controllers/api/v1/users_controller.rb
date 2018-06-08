@@ -29,6 +29,7 @@ module Api
     if command.success?
       render json: {
         access_token: command.result,
+        user: User.find_by_email(email),
         message: 'Login Successful'
       }
     else

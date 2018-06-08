@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_06_06_223410) do
     t.string "name"
     t.text "comment"
     t.string "avatar"
+    t.string "storyId"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,6 +52,7 @@ ActiveRecord::Schema.define(version: 2018_06_06_223410) do
     t.string "name"
     t.text "comment"
     t.string "avatar"
+    t.string "storyId"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -59,6 +61,7 @@ ActiveRecord::Schema.define(version: 2018_06_06_223410) do
     t.string "name"
     t.text "comment"
     t.string "avatar"
+    t.string "storyId"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -75,6 +78,7 @@ ActiveRecord::Schema.define(version: 2018_06_06_223410) do
     t.string "name"
     t.text "comment"
     t.string "avatar"
+    t.string "storyId"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -96,7 +100,9 @@ ActiveRecord::Schema.define(version: 2018_06_06_223410) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "avatar"
     t.string "password_digest"
+    t.boolean "admin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -40,7 +40,7 @@ module Api
       private
 
       def publik_comments_params
-        params.permit(:name, :comment, :avatar)
+        params.permit(:name, :comment, :avatar, :storyId)
       end
     end
   end

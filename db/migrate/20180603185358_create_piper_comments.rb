@@ -4,6 +4,7 @@ class CreatePiperComments < ActiveRecord::Migration[5.2]
       t.string :name
       t.text :comment
       t.string :avatar
+      t.string :storyId
       t.timestamps
     end
   end
