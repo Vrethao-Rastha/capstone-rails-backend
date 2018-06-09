@@ -122,3 +122,37 @@ User.create({
         password: 'asdf',
         admin: 'false'
         })
+
+
+DcrComment.create({
+  name: 'Valkryie',
+  comment: 'Is anyone surprised by this?',
+  avatar: '/Soul_survivor.jpg',
+  storyId: '4'
+  })
+
+  DcrComment.create({
+    name: 'Preston',
+    comment: 'No',
+    avatar: '/preston.png',
+    storyId: '4'
+    })
+
+  MainStoryComment.create({
+    name: 'Valkryie',
+    comment: "Why don't you people just ask me?",
+    avatar: '/Soul_survivor.jpg',
+    storyId: '3'
+    })
+    MainStoryComment.create({
+    name: 'Heather',
+    comment: 'Seriosly. Communication people. Raider Warlord indeed...',
+    avatar: '/dugout2.jpg',
+    storyId: '3'
+  })
+  MainStoryComment.create({
+  name: 'Ronnie',
+  comment: 'Welcome back, nick',
+  avatar: 'https://i.ytimg.com/vi/feZTsPo106o/maxresdefault.jpg',
+  storyId: '3'
+})
