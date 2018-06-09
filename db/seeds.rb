@@ -1,10 +1,37 @@
-5.times do
+Blogs.create({
+  title: "The Death of Hope",
+  body: "I met a man today. A broken idealist, much like I hope I once was. He believes that the Commonwealth can be turned around. I’m not sure I agree. I don’t know why I agreed to help him. Even if we could turn everything around and create this perfect world, what place would there be for me in it? I’m a monster. A fiend.  Perhaps the only road to redemption left to me is to die trying to create this brave new world. Were I a religious woman, I would be a lot more concerned about what may be waiting for me when this body finally fails. So this is my new purpose in life? Can I dedicate myself to trying to build something lasting on the bones of my failure? Maybe that will be enough.",
+  picture: "/rain2.jpg"
+  })
+
   Blogs.create({
-    title: Faker::Fallout.character,
-    body: Faker::Fallout.faction,
-    picture: Faker::Fallout.quote,
+    title: "Feral",
+    body: "I killed a man with a sledge hammer today. That would normally hold more weight than it does these days. My pipegun jammed, he was running at me with some kind of bladed tire iron in hand. I hit him in the chest, noting the odd vibrations that traveled up the handle as his ribs and sternum shattered. As he lay there, choking on his own blood, I felt nothing. I left him there, drowning in blood. That distant part of me that screams at night in my dreams was calm. I know this place is stealing the last shreds of my humanity. All I want is a safe place for Heather and me, where we can live in peace and be left alone. Every day I spend in this place moves me closer to those mindless feral ghouls that aimlessly wander the countryside. Where must we wander this wasteland, we who search for our better selves?",
+    picture: "/backstreet.jpg"
     })
-end
+
+    Blogs.create({
+      title: "Lost Souls",
+      body: "I found my way to the old cemetery behind the drive-in today. Not sure what led my feet that direction. Maybe I had intended to find an open grave and fill it. Not sure there was any plan at all. I used to find the stone benches and trees comforting, I do remember that. I found none of that serenity this visit. What I did find was another lost soul.  A woman named Heather who had lost her sister. I think that collective loss brought us together, not that there’s anyone in this hollow place that doesn’t wear loss and pain as we used to wear designer clothing. Its nice to have someone around. In all honesty, before she saw me and called out to me, I’m not sure the last time I spoke. The difficulty I had in making my voice work was telling. All those raiders I killed in the Air Force base, and the ones in the Corvega plant the following day, I don’t think I said a thing. I don’t even talk to the dog anymore. She agreed to come back with me to the Red Rocket I’ve been living in. As the light failed, distant gunfire echoed around the countryside. Strange what a person can get used to.",
+      picture: "/Valk.jpg"
+      })
+
+      Blogs.create({
+        title: "Wraith",
+        body: "An old pre war saying came to mind today: As the world fell, each of us in our own way was broken. It was hard to know who was more crazy... me... or everyone else.I no longer remember the context, but I find it comforting.I went home today. Or to what used to be my home.An abandoned ruin, just dry bones.It feels like someone else’s life now. Did I really used to live here, or have I cracked and created this comforting illusion?A mother seeking a lost son. Not a new tale, for humanity in general, or in the Commonwealth specifically.It would be easy enough to just lie down, stop wandering and end it. There is some appeal in that. Another old quote: Hope is a mistake. If you can’t fix whats broken, you’ll go insane.And yet here I am, writing this journal on this battered old Pipboy.I found some food and water in an old cellar behind one of these ruined houses.When the sun rises I’ll set off for Concord.",
+        picture: "/home.jpg"
+        })
+
+  Blogs.create({
+    title:"Homecoming?",
+    body: "I’m from here. I was born in the Commonwealth, but I’ve been away for a long time.When I first set eyes on my home again, I thought I was lost. Or dead.I guess time has a way of smoothing over the corners of memory, but as I stood on the western border of the Commonwealth that day, I wasn’t sure it was worth going any further.Then some fool raider decided to try to shoot my dog.So now this place can burn, as far as I’m concerned.I don’t know if she was bloodthirsty and tried to kill everyone she met out here, or was just hungry.It the end, it hardly mattered. She tried to kill me, so I killed her.Just another day in the Commonwealth.There is a distant part of me that often wonders: there are so few of us left. A shade, clinging to the bones of its former glory.I don’t even know how many I’ve killed. No more than tried to kill me to be sure, but every death brings humanity one step closer to our inevitable end.There are those who say that we can yet rebuild, that extinction isn’t inevitable.Personally, I think we died 200 years ago, and the body hasn’t stopped twitching yet.I think I’ll end this here. Even I can’t maintain this level of melancholy forever.Just another day in the Commonwealth…",
+    picture: '/near the riptide.jpg'
+    })
+
+
+
+
+
 
   MainStory.create({
     title: "Corvega Assembly plant goes silent:",
