@@ -41,7 +41,8 @@ module Api
     params.permit(
       :name,
       :email,
-      :password
+      :password,
+      :avatar
     )
   end
     end
