@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
       resources :users
 
-      resources :scroller
+      resources :post_comments
 
       post '/register', to: 'users#register'
       post '/login', to: 'users#login'
