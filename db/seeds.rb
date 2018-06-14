@@ -92,7 +92,7 @@ DcRnews.create({
       })
       DcRnews.create({
         title: "Stolen Sweetroll?",
-        body: "Mama Murphey reports someone stole her Sweetroll. After a thouough interview and investigation, Mama Murphey admitted to be under the influence of Grape Mentats and Jet at the time in question. False alarm.",
+        body: "Mama Murphey reports someone stole her Sweetroll. After a thorough interview and investigation, Mama Murphey admitted to be under the influence of Grape Mentats and Jet at the time in question. False alarm.",
         picture: "/Mama_Murphy.png"
         })
 
