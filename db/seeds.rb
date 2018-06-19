@@ -1,4 +1,17 @@
 Blogs.create({
+  title: "Time rolls on...",
+  body:"A lot can happen in a year.
+  The institute is gone, merely blasted, radioactive crater in the middle of Cambridge now.
+  I lost my right arm in that assault.
+  Heather lost her eyes and half her face to a Corser bastard.
+  Although both injuries were... overcome with the help of salvaged Institute tech, the cost was high.
+  Yet the Commonwealth is little safer that it has always been. Granted people aren't being kidnapped from their beds in the night any longer, but the fight to stay alive continues.
+  Raider warbands, perhaps emboldened by the demise of the Institute, are encroaching from the west. As best I can tell, its actually an alliance of three Raider factions operating out of a ruined amusement park, of all things.
+  Regardless, food, clean water and personal safety are at just as much of a premium today as ever before.",
+  picture: "/near the riptide2.jpg"
+  })
+
+Blogs.create({
   title: "The Death of Hope",
   body: "I met a man today. A broken idealist, much like I hope I once was. He believes that the Commonwealth can be turned around. I’m not sure I agree. I don’t know why I agreed to help him. Even if we could turn everything around and create this perfect world, what place would there be for me in it? I’m a monster. A fiend.  Perhaps the only road to redemption left to me is to die trying to create this brave new world. Were I a religious woman, I would be a lot more concerned about what may be waiting for me when this body finally fails. So this is my new purpose in life? Can I dedicate myself to trying to build something lasting on the bones of my failure? Maybe that will be enough.",
   picture: "/rain2.jpg"
