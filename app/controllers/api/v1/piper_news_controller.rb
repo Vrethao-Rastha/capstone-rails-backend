@@ -40,7 +40,7 @@ module Api
       private
 
       def piper_params
-        params.permit(:title, :body, :picture)
+        params.permit(:question, :answer, :picture)
       end
     end
   end
