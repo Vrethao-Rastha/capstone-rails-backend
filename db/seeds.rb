@@ -243,3 +243,7 @@ DcrComment.create({
                       answer: 'V: No problem. Honestly its nice to be taking a break. The last few days have been… difficult.',
                       picture: 'http://via.placeholder.com/350x150'
                       })
+About.create({
+  user: 'Valkyrie',
+  about: 'I like cheese'
+  })

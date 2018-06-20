@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
       resources :post_comments
 
+      resources :about
+
       post '/register', to: 'users#register'
       post '/login', to: 'users#login'
       get '/test', to: 'users#test'
