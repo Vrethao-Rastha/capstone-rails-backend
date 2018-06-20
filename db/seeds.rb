@@ -180,3 +180,70 @@ DcrComment.create({
     avatar: '/Soul_survivor.jpg',
     storyId: '3'
     })
+  PiperNews.create({
+    question: 'P: That… sounds grim. ',
+    answer: 'V: As I said, we have many struggles yet to come, but we can overcome them, together.',
+    picture: ''
+    })
+    PiperNews.create({
+      question: 'P: You say more threats. Could you elaborate on that a bit?',
+      answer: 'V: Yes.
+      Firstly, my scouts are claiming that a group of Raider Warbands have joined forces in the West, operating out of a ruined amusement park.
+      We’ve captured a few forward scouts, and from what we’ve been able to piece together, someone calling themselves The Overboss is leading this new force, and have set their eyes on our Commonwealth.',
+      picture: ''
+      })
+      PiperNews.create({
+        question: 'P: Okay, on to a different topic then. With the Institute defeated, whats the next move for the Minutemen and the Railroad?',
+        answer: 'V: We begin to rebuild. I’m not going to pretend it will be easy, and there are definitely more threats out there, but with the shadow of the Institute out from above us, we can move forward.',
+        picture: ''
+        })
+        PiperNews.create({
+          question: 'P: But he was your SON. Your own flesh and blood! I know the hell you went through to track him down in the first place. How could you do such a thing?',
+          answer: 'V: Well, as you said, he was my son. My child. I still love him as the baby I remember, but as his mother, I’m also responsible for the atrocities he committed.
+          All the loved ones kidnapped, the friends and family that simply disappeared. Every soul that lived at University Point.
+          The anguish that man, my son, was responsible for cannot be counted.
+          It broke my heart to do it, but it needed to be done, and I’d do it all over again.',
+          picture: ''
+          })
+          PiperNews.create({
+            question: 'P: Good god, Blue! You killed your own son?!',
+            answer: 'V: Yes. ',
+            picture: ''
+            })
+            PiperNews.create({
+              question: 'P: And your response?',
+              answer: 'V: I told him I couldn’t believe my own son could be such a disappointment.
+              He said something similar in return, and I suggested that we agree that we were both massive failures, shortly before putting a bullet between his eyes.',
+              picture: ''
+              })
+              PiperNews.create({
+                question: 'P: What did you say to him, if that not too personal?',
+                answer: 'V: No, not at all. I’ll tell you.
+                He accused me of tearing down all he had built, and condemning the future of humanity, all out of spite.',
+                picture: ''
+                })
+                PiperNews.create({
+                  question: 'P: Your son.
+                  I know this is news to most of the people of the Commonwealth, that your son was the Director of the Institute.
+                  Eye witness reports claim that you spoke to him at the end, and that he didn’t escape the Institutes destruction.
+                  Did you speak to him at the end?',
+                  answer: 'V: Yes. Yes I did.',
+                  picture: ''
+                  })
+                  PiperNews.create({
+                    question: 'P: So. The Institute is gone. I know many of my readers would refuse to believe it, if not for the gigantic new crater in Cambridge. How do you feel about what you’ve accomplished here?',
+                    answer: 'V: Honestly?  I’m feeling pretty mixed about what I’ve done.
+                    The Institute was evil. What my son had done, the choices he had made, were unforgivable.
+                    I have no doubt in my mind that it was the right thing to do, but I do wonder about all the technology we destroyed.',
+                    picture: ''
+                    })
+                    PiperNews.create({
+                      question: 'P: Thank you for taking the time to sit down with me again. I know you have a lot going on right now.',
+                      answer: 'V: No problem. Honestly its nice to be taking a break. The last few days have been… difficult.',
+                      picture: ''
+                      })
+                      PiperNews.create({
+                        question: '',
+                        answer: '',
+                        picture: ''
+                        })

@@ -1,5 +1,5 @@
 class PiperNews < ApplicationRecord
-  validates :title, presence: true
-  validates :body, presence: true
+  validates :question, presence: true
+  validates :answer, presence: true
   validates :picture, presence: true
 end

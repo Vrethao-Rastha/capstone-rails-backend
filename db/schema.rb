@@ -67,8 +67,8 @@ ActiveRecord::Schema.define(version: 2018_06_14_183017) do
   end
 
   create_table "piper_news", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
+    t.text "question"
+    t.text "answer"
     t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
