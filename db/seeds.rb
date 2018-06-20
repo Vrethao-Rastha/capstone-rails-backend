@@ -110,8 +110,8 @@ DcRnews.create({
         })
 
 User.create({
-  name: 'Valkryie',
-  email: 'V@lkryie.Vault111',
+  name: 'Valkyrie',
+  email: 'V@lkyrie.Vault111',
   avatar: '/Soul_survivor.jpg',
   password: 'asdf',
   admin: 'true'
