@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
       resources :users
 
-      resources :post_comments
+      resources :main_post_comments
 
       resources :about
 
