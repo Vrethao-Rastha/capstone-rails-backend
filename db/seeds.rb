@@ -260,6 +260,6 @@ About.create({
         about: 'I like cheese'
         })
         About.create({
-          user: 'Noel',
+          user: 'Wastelander Noel',
           about: 'I like CSS'
           })
