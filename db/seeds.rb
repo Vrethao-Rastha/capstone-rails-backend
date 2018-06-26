@@ -245,5 +245,21 @@ DcrComment.create({
                       })
 About.create({
   user: 'Valkyrie',
-  about: 'I like cheese'
+  about: 'I was born in the year 2050. I lived most of my life in the years before the bombs. Most of that is distant now, like a pleasant dream, and all I really remember is the morning the bombs fell, running to the Vault with my husband and child, and then waking up here. I still wake up every morning thinking this life is a nightmare. I also miss cheese.'
   })
+  About.create({
+    user: 'Preston',
+    about: "I'm a really boring flat character that nobody likes very much."
+    })
+    About.create({
+      user: 'Heather',
+      about: 'I grew up in the Brotherhood. My mom was a Knight, and my dad was a field scribe. I spent most of my childhood in the Capital Wasteland, but after my parents had a falling out with Elder Lyons we wound up here in the Commonwealth, trying to scrape a living as Caravan Traders.'
+      })
+      About.create({
+        user: 'Ronnie',
+        about: 'I like cheese'
+        })
+        About.create({
+          user: 'Noel',
+          about: 'I like CSS'
+          })

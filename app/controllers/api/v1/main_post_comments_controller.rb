@@ -40,7 +40,7 @@ module Api
       private
 
       def main_post_comments_params
-        params.permit(:name, :comment, :avatar, :postId, :storyId)
+        params.permit(:name, :comment, :avatar, :storyId, :main_story_comment_id)
       end
     end
   end

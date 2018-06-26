@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_21_175420) do
+ActiveRecord::Schema.define(version: 2018_06_25_174708) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,13 +48,14 @@ ActiveRecord::Schema.define(version: 2018_06_21_175420) do
   end
 
   create_table "main_post_comments", force: :cascade do |t|
+    t.integer "main_story_comment_id"
     t.string "name"
     t.text "comment"
     t.string "avatar"
-    t.string "postId"
     t.string "storyId"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["main_story_comment_id"], name: "index_main_post_comments_on_main_story_comment_id"
   end
 
   create_table "main_stories", force: :cascade do |t|
