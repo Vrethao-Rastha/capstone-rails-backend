@@ -133,7 +133,7 @@ User.create({
 User.create({
         name: 'Heather',
         email: 'C@ssadin.Vault111',
-        avatar: '/dugout2.jpg',
+        avatar: '/heather_avatar.jpeg',
         password: 'asdf',
         admin: 'false'
         })
@@ -169,8 +169,8 @@ DcrComment.create({
 
   MainStoryComment.create({
     name: 'Heather',
-    comment: 'Seriosly. Communication people. Raider Warlord indeed...',
-    avatar: '/dugout2.jpg',
+    comment: 'Seriously. Communication people. Raider Warlord indeed...',
+    avatar: '/heather_avatar.jpeg',
     storyId: '3'
     })
 
