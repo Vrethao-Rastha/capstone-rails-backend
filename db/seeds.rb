@@ -265,6 +265,6 @@ About.create({
         })
         About.create({
           user: 'Wastelander Noel',
-          about: 'I like CSS',
+          about: "As of this moment, we are all dead. We go into battle to reclaim our lives. This we do gladly, for we are Web Developers. Remember: CSS is life.",
           avatar:  'https://staticdelivery.nexusmods.com/images/130/2803386-1434394067.jpg'
           })
