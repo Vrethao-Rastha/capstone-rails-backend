@@ -133,7 +133,7 @@ User.create({
 User.create({
         name: 'Heather',
         email: 'C@ssadin.Vault111',
-        avatar: '/heather_avatar.jpeg',
+        avatar: '/dugout2.jpg',
         password: 'asdf',
         admin: 'false'
         })
