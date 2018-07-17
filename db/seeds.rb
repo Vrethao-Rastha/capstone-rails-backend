@@ -144,6 +144,13 @@ User.create({
                 password: 'asdf',
                 admin: 'false'
                 })
+                User.create({
+                        name: 'Guest',
+                        email: 'Guest@email.com',
+                        avatar: 'https://i.pinimg.com/originals/2b/46/bc/2b46bca0dcb7fd1d135d24d74b9b000f.jpg',
+                        password: '12345',
+                        admin: 'false'
+                        })
 
      DcrComment.create({
           name: 'Preston',
